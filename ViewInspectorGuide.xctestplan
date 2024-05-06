@@ -9,6 +9,7 @@
     }
   ],
   "defaultOptions" : {
+    "codeCoverage" : false,
     "targetForVariableExpansion" : {
       "containerPath" : "container:ViewInspectorGuide.xcodeproj",
       "identifier" : "6B6767F62BE92E89002C8891",
