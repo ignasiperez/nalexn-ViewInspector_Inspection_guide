@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B60658B2BE9407C00038432 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60658A2BE9407C00038432 /* MyView.swift */; };
+		6B60658D2BE940FA00038432 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B60658C2BE940FA00038432 /* OtherView.swift */; };
 		6B6767FB2BE92E89002C8891 /* ViewInspectorGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6767FA2BE92E89002C8891 /* ViewInspectorGuideApp.swift */; };
 		6B6767FD2BE92E89002C8891 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6767FC2BE92E89002C8891 /* ContentView.swift */; };
 		6B6767FF2BE92E8B002C8891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6767FE2BE92E8B002C8891 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B60658A2BE9407C00038432 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		6B60658C2BE940FA00038432 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 		6B6767F72BE92E89002C8891 /* ViewInspectorGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewInspectorGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6767FA2BE92E89002C8891 /* ViewInspectorGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInspectorGuideApp.swift; sourceTree = "<group>"; };
 		6B6767FC2BE92E89002C8891 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			children = (
 				6B6767FA2BE92E89002C8891 /* ViewInspectorGuideApp.swift */,
 				6B6767FC2BE92E89002C8891 /* ContentView.swift */,
+				6B60658A2BE9407C00038432 /* MyView.swift */,
+				6B60658C2BE940FA00038432 /* OtherView.swift */,
 				6B6767FE2BE92E8B002C8891 /* Assets.xcassets */,
 				6B6768002BE92E8B002C8891 /* Preview Content */,
 			);
@@ -207,8 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B60658B2BE9407C00038432 /* MyView.swift in Sources */,
 				6B6767FD2BE92E89002C8891 /* ContentView.swift in Sources */,
 				6B6767FB2BE92E89002C8891 /* ViewInspectorGuideApp.swift in Sources */,
+				6B60658D2BE940FA00038432 /* OtherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

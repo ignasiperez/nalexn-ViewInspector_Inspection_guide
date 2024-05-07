@@ -11,14 +11,6 @@ import ViewInspector
 
 final class ViewInspectorGuideTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
     func test_StringValue_shouldBeHelloWorld() throws {
         // GIVEN
         let sut = ContentView()
@@ -29,5 +21,20 @@ final class ViewInspectorGuideTests: XCTestCase {
         // THEN
         XCTAssertEqual(value, "Hello, world!")
     }
+    
+    func test_StringValueOnOtherView_shouldBeOk() throws {
+        // GIVEN
+        let sut = MyView()
+        
+        // WHEN
+        let value = try sut.inspect().hStack().anyView(1).view(OtherView.self).text().string()
+        
+        // THEN
+        XCTAssertEqual(value, "Ok")
+    }
+    
+    
+    
+    
 
 } // ViewInspectorGuideTests
