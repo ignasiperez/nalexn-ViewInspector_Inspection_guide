@@ -33,6 +33,19 @@ final class ViewInspectorGuideTests: XCTestCase {
         XCTAssertEqual(value, "Ok")
     }
     
+    func test_StringValueOnOtherViewWithIntermediateResults_shouldBeOk() throws {
+        // GIVEN
+        let sut = MyView()
+        
+        // WHEN
+        let hStack = try sut.inspect().hStack() // InspectableView<ViewType.HStack>
+        let hiText = try hStack.text(0)         // InspectableView<ViewType.Text>
+        let value = try hStack.anyView(1).view(OtherView.self).text().string()
+        
+        // THEN
+        XCTAssertEqual(value, "Ok")
+    }
+    
     
     
     
